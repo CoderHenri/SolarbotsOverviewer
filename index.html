@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="Logic.js"></script> 
+    <title>Solarbot local Machine</title>
+</head>
+
+<body id="webpage" onload="DecodeGenes()">
+    <div id="FixedBoxFixer">
+        <div id="Entwickler">Made by Henri (Twitter: @HenriCoder)</div>
+        <div id="Donation">Donate to: 0xBCd8Fbb84Efc6bF1B7dFfD43E404A54B9AED1cdb</div>
+    </div>
+    <div id="Ueberschrift">
+        <h1 id="Headline">Your Solarbot Overviewer</h1>
+            <p id="Underline">A tool to show all your Solarbots and the one's still missing in your collection</p>
+    </div>
+
+
+    <div id="lds-hourglass"></div>
+
+    <div id="SimpleFeature">    
+        <div class="Buttoncontainer">
+            <button class="Button" id="SelectETHAddy" onclick="SelectAddress()"> Select your ETH Adress </button>
+                <div id="ETHAddress"> 0x... </div>
+        </div>
+    </div>
+
+</body>
+</html>
