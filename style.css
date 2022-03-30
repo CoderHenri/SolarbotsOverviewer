@@ -121,3 +121,87 @@
     transform: rotate(1800deg);
   }
 }
+
+
+#YourBotsBoxV2{
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 740px;
+  height: auto;
+  position: relative;
+  display: grid;
+  grid-template-rows: 35px 30px;
+  grid-template-columns: 150px 150px 110px 110px 110px 110px;
+  row-gap: 5px;
+}
+
+#YourBotsHeaderBox{
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 740px;
+  height: auto;
+  position: relative;
+  display: grid;
+  grid-template-rows: 35px 30px;
+  grid-template-columns: 150px 150px 110px 110px 110px 110px;
+  grid-template: "Header1 Header2 Header3 Header4 Header5 Header6";
+  row-gap: 5px;
+}
+
+.YourBotsBox{
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 740px;
+  height: auto;
+  position: relative;
+  display: grid;
+  grid-template-rows: 35px 30px;
+  grid-template-columns: 150px 150px 110px 110px 110px 110px;
+  grid-template:
+    "Faction Rarity ClassTank FieldVNSM FieldVNSF FieldVNSB"
+    "Faction Rarity ClassSupport FieldSM FieldSF FieldSB"
+    "Faction Rarity ClassRDRS FieldRM FieldRF FieldRB"
+    "Faction Rarity ClassMDMS FieldMM FieldMF FieldMB";
+  row-gap: 5px;
+}
+
+.Header1{
+  grid-area: Header1;
+}
+.Header2{
+  grid-area: Header2;
+}
+.Header3{
+  grid-area: Header3;
+}
+.Header4{
+  grid-area: Header4;
+}
+.Header5{
+  grid-area: Header5;
+}
+.Header6{
+  grid-area: Header6;
+}
+
+.Faction {
+  grid-area: Faction;
+}
+
+.Rarity{
+  grid-area: Rarity;
+}
+
+.UICategory {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(125, 125, 125, 0.8);
+  text-align: center;
+}
