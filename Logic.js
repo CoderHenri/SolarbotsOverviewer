@@ -179,6 +179,8 @@ function InterpretID() {
   });
   console.log(SortedOwnedBots);
   ShowMissingBots();
+  AddAmounts();
+  UIWriter();
 
 }
 
@@ -203,4 +205,28 @@ function ShowMissingBots() {
   console.log(AmountOfBotsMissingAreVoids);
   console.log("You're missing "+AmountOfBotsMissing+" Solarbots, of which "+AmountOfBotsMissingAreVoids+" are Void Solarbots");
   console.log(ArrayOfMissingBots);
+}
+
+var SAmountArray = [];
+
+function AddAmounts() {
+  for(i=0; i<SortedOwnedBots.length; i++) {
+    if(i==0) {
+      SAmountArray.push({Rarity : SortedOwnedBots[i].Rarity, Faction : SortedOwnedBots[i].Faction, Class : SortedOwnedBots[i].Class, Type : SortedOwnedBots[i].Type, Amount : 1});
+    } else if(SAmountArray[SAmountArray.length-1].Rarity == SortedOwnedBots[i].Rarity && SAmountArray[SAmountArray.length-1].Faction == SortedOwnedBots[i].Faction && SAmountArray[SAmountArray.length-1].Class == SortedOwnedBots[i].Class && SAmountArray[SAmountArray.length-1].Type == SortedOwnedBots[i].Type) {
+      SAmountArray[SAmountArray.length-1].Amount = SAmountArray[SAmountArray.length-1].Amount+1;
+    } else {
+      SAmountArray.push({Rarity : SortedOwnedBots[i].Rarity, Faction : SortedOwnedBots[i].Faction, Class : SortedOwnedBots[i].Class, Type : SortedOwnedBots[i].Type, Amount : 1});
+    }
+  }
+  console.log(SAmountArray);
+}
+
+function UIWriter() {
+  let IdName = "";
+  for(i=0; i<SAmountArray.length; i++) {
+    IdName = SAmountArray[i].Rarity.charAt(0) + SAmountArray[i].Faction.charAt(0) + SAmountArray[i].Class.charAt(0) + SAmountArray[i].Type.charAt(0);
+    console.log(IdName);
+    document.getElementById("Field"+IdName).innerHTML = SAmountArray[i].Amount;
+  }
 }
