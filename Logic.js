@@ -54,6 +54,8 @@ async function GetAccountData(ETHAddy) {
   console.log("geht");
   var AmountOfBots = 0;
 
+  var HexHelp = "0x70a08231000000000000000000000000"+ETHAddy.slice(2);
+
   await fetch("https://node1.web3api.com/", {
     "credentials": "omit",
     "headers": {
@@ -66,7 +68,7 @@ async function GetAccountData(ETHAddy) {
         "Sec-Fetch-Site": "cross-site"
     },
     "referrer": "https://etherscan.io/",
-    "body": "{\"jsonrpc\":\"2.0\",\"id\":3,\"method\":\"eth_call\",\"params\":[{\"from\":\""+ETHAddy+"\",\"data\":\"0x70a08231000000000000000000000000606fd755081d7ea7c1e2d6faafe6d9cdb1ea142c\",\"to\":\"0x8009250878ed378050ef5d2a48c70e24eb2ede7e\"},\"latest\"]}",
+    "body": "{\"jsonrpc\":\"2.0\",\"id\":3,\"method\":\"eth_call\",\"params\":[{\"from\":\""+ETHAddy+"\",\"data\":\""+HexHelp+"\",\"to\":\"0x8009250878ed378050ef5d2a48c70e24eb2ede7e\"},\"latest\"]}",
     "method": "POST",
     "mode": "cors"
   })
@@ -76,6 +78,7 @@ async function GetAccountData(ETHAddy) {
   })
             
   .then(function(data) {
+    console.log(data);
     AmountOfBots = data.result;
     AmountOfBots = AmountOfBots.substring(2);
     AmountOfBots = AmountOfBots.replace(/^0+/, '');
@@ -84,14 +87,14 @@ async function GetAccountData(ETHAddy) {
   });
 
   for(i=0; i<AmountOfBots; i++) {
-    FetchBots(i+1, i, AmountOfBots);
+    FetchBots(i+1, i, AmountOfBots, ETHAddy);
   }
 
 }
 
 var BotsInAccountArray = [];
 
-async function FetchBots(id, bodydata, AmountOfBots) {
+async function FetchBots(id, bodydata, AmountOfBots, ETHAddy) {
 
   let BotID = null;
 
@@ -99,7 +102,7 @@ async function FetchBots(id, bodydata, AmountOfBots) {
 
   let CorrectAmountOfZeros = "0".repeat(7-bodydata.length);   //gives bodydata data fetch query stuff the correct amount of zeros, since the hex number has different lengths depending on what you enter
 
-  bodydata = "0x2f745c59000000000000000000000000606fd755081d7ea7c1e2d6faafe6d9cdb1ea142c000000000000000000000000000000000000000000000000000000000" + CorrectAmountOfZeros + bodydata;
+  bodydata = "0x2f745c59000000000000000000000000"+ETHAddy.slice(2)+"000000000000000000000000000000000000000000000000000000000" + CorrectAmountOfZeros + bodydata;
 
   await fetch("https://node1.web3api.com/", {
     "credentials": "omit",
@@ -181,14 +184,23 @@ function InterpretID() {
 
 function ShowMissingBots() {
   var AmountOfBotsMissing = 0;
+  var AmountOfBotsMissingAreVoids = 0;
+  var ArrayOfMissingBots = [];
   for(i=0; i<AllCombinationsArray.length; i++) {
     for(j=0; j<SortedOwnedBots.length; j++) {
       if(AllCombinationsArray[i].Rarity == SortedOwnedBots[j].Rarity && AllCombinationsArray[i].Faction == SortedOwnedBots[j].Faction && AllCombinationsArray[i].Class == SortedOwnedBots[j].Class && AllCombinationsArray[i].Type == SortedOwnedBots[j].Type) {
         break;
       } else if(j+1 == SortedOwnedBots.length) {
         AmountOfBotsMissing++;
+        if(AllCombinationsArray[i].Rarity == "Void") {
+          AmountOfBotsMissingAreVoids++;
+        }
+        ArrayOfMissingBots.push(AllCombinationsArray[i]);
       }
     }
   }
   console.log(AmountOfBotsMissing);
+  console.log(AmountOfBotsMissingAreVoids);
+  console.log("You're missing "+AmountOfBotsMissing+" Solarbots, of which "+AmountOfBotsMissingAreVoids+" are Void Solarbots");
+  console.log(ArrayOfMissingBots);
 }
