@@ -160,6 +160,25 @@
   row-gap: 5px;
 }
 
+.YourBotsBoxNeutral {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 740px;
+  height: auto;
+  position: relative;
+  display: grid;
+  grid-template-rows: 30px;
+  grid-template-columns: 150px 150px 110px 110px 110px 110px;
+  grid-template-areas:
+    "Faction Rarity ClassTank NeutralT NeutralT NeutralT"
+    "Faction Rarity ClassSupport NeutralS NeutralS NeutralS"
+    "Faction Rarity ClassRDRS NeutralR NeutralR NeutralR"
+    "Faction Rarity ClassMDMS NeutralM NeutralM NeutralM";
+  row-gap: 5px;
+}
+
 .Header1{
   grid-area: Header1;
 }
@@ -188,6 +207,34 @@
 
 .Rarity{
   grid-area: Rarity;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NeutralT{
+  grid-area: NeutralT;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NeutralS{
+  grid-area: NeutralS;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NeutralR{
+  grid-area: NeutralR;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NeutralM{
+  grid-area: NeutralM;
   display: flex;
   align-items: center;
   justify-content: center;
