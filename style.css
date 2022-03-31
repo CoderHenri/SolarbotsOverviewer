@@ -130,7 +130,10 @@
   margin-top: 25px;
   width: 740px;
   height: auto;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #252835;
   display: grid;
   grid-template-rows: 35px;
   grid-template-columns: 150px 150px 110px 110px 110px 110px;
