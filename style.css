@@ -123,20 +123,6 @@
 }
 
 
-#YourBotsBoxV2{
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-  width: 740px;
-  height: auto;
-  position: relative;
-  display: grid;
-  grid-template-rows: 35px 30px;
-  grid-template-columns: 150px 150px 110px 110px 110px 110px;
-  row-gap: 5px;
-}
-
 #YourBotsHeaderBox{
   border: 1px solid rgba(255, 255, 255, 0.8);
   margin-left: auto;
@@ -146,9 +132,9 @@
   height: auto;
   position: relative;
   display: grid;
-  grid-template-rows: 35px 30px;
+  grid-template-rows: 35px;
   grid-template-columns: 150px 150px 110px 110px 110px 110px;
-  grid-template: "Header1 Header2 Header3 Header4 Header5 Header6";
+  grid-template-areas: "Header1 Header2 Header3 Header4 Header5 Header6";
   row-gap: 5px;
 }
 
@@ -161,9 +147,9 @@
   height: auto;
   position: relative;
   display: grid;
-  grid-template-rows: 35px 30px;
+  grid-template-rows: 30px;
   grid-template-columns: 150px 150px 110px 110px 110px 110px;
-  grid-template:
+  grid-template-areas:
     "Faction Rarity ClassTank FieldVNSM FieldVNSF FieldVNSB"
     "Faction Rarity ClassSupport FieldSM FieldSF FieldSB"
     "Faction Rarity ClassRDRS FieldRM FieldRF FieldRB"
@@ -192,10 +178,16 @@
 
 .Faction {
   grid-area: Faction;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Rarity{
   grid-area: Rarity;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .UICategory {

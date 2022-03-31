@@ -1,0 +1,1154 @@
+[
+  {
+    "Rarity": "Void",
+    "Faction": "Neutral",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Neutral",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Neutral",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Neutral",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Neutral",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Neutral",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Neutral",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Neutral",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Neutral",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Neutral",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Neutral",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Neutral",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Lacrean",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Lacrean",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Lacrean",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Lacrean",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Lacrean",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Lacrean",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Lacrean",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Lacrean",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Lacrean",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Lacrean",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Lacrean",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Lacrean",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Illskagaard",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Illskagaard",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Illskagaard",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Illskagaard",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Illskagaard",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Illskagaard",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Illskagaard",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Illskagaard",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Illskagaard",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Illskagaard",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Illskagaard",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Illskagaard",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Arboria",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Arboria",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Arboria",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Arboria",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Arboria",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Arboria",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Arboria",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Arboria",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Arboria",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Arboria",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Arboria",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Void",
+    "Faction": "Arboria",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Neutral",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Neutral",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Neutral",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Neutral",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Neutral",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Neutral",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Neutral",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Neutral",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Neutral",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Neutral",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Neutral",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Neutral",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Lacrean",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Lacrean",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Lacrean",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Lacrean",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Lacrean",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Lacrean",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Lacrean",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Lacrean",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Lacrean",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Lacrean",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Lacrean",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Lacrean",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Illskagaard",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Illskagaard",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Illskagaard",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Illskagaard",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Illskagaard",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Illskagaard",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Illskagaard",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Illskagaard",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Illskagaard",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Illskagaard",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Illskagaard",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Illskagaard",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Arboria",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Arboria",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Arboria",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Arboria",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Arboria",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Arboria",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Arboria",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Arboria",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Arboria",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Arboria",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Arboria",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Epic",
+    "Faction": "Arboria",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Neutral",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Neutral",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Neutral",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Neutral",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Neutral",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Neutral",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Neutral",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Neutral",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Neutral",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Neutral",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Neutral",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Neutral",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Lacrean",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Lacrean",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Lacrean",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Lacrean",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Lacrean",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Lacrean",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Lacrean",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Lacrean",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Lacrean",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Lacrean",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Lacrean",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Lacrean",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Illskagaard",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Illskagaard",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Illskagaard",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Illskagaard",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Illskagaard",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Illskagaard",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Illskagaard",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Illskagaard",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Illskagaard",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Illskagaard",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Illskagaard",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Illskagaard",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Arboria",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Arboria",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Arboria",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Arboria",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Arboria",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Arboria",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Arboria",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Arboria",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Arboria",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Arboria",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Arboria",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Rare",
+    "Faction": "Arboria",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Neutral",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Neutral",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Neutral",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Neutral",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Neutral",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Neutral",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Neutral",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Neutral",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Neutral",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Neutral",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Neutral",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Neutral",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Lacrean",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Lacrean",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Lacrean",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Lacrean",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Lacrean",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Lacrean",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Lacrean",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Lacrean",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Lacrean",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Lacrean",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Lacrean",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Lacrean",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Illskagaard",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Illskagaard",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Illskagaard",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Illskagaard",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Illskagaard",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Illskagaard",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Illskagaard",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Illskagaard",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Illskagaard",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Illskagaard",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Illskagaard",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Illskagaard",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Arboria",
+    "Class": "Tank",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Arboria",
+    "Class": "Tank",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Arboria",
+    "Class": "Tank",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Arboria",
+    "Class": "Support",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Arboria",
+    "Class": "Support",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Arboria",
+    "Class": "Support",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Arboria",
+    "Class": "Ranged DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Arboria",
+    "Class": "Ranged DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Arboria",
+    "Class": "Ranged DPS",
+    "Type": "Male Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Arboria",
+    "Class": "Melee DPS",
+    "Type": "Neutral Baby"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Arboria",
+    "Class": "Melee DPS",
+    "Type": "Fem Large"
+  },
+  {
+    "Rarity": "Common",
+    "Faction": "Arboria",
+    "Class": "Melee DPS",
+    "Type": "Male Large"
+  }
+]

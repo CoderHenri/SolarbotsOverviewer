@@ -1,8 +1,3 @@
-var AllBotsTemplate = [{rarity : "common"}, {rarity : "rare"}, {rarity : "epic"}, {rarity : "void"}, 
-                        {faction : "neutral"}, {faction : "lacrean"}, {faction : "illskagaard"}, {faction : "arboria"},
-                        {type : "neutral baby"}, {type : "neutral baby"}, {type : "fem large"}, {type : "male large"},
-                        {botclass : "tank"}, {botclass : "melee dps"}, {botclass : "ranged dps"}, {botclass : "support"}];
-
 function AsyncTextReader(Place) {
     return new Promise(function (resolve, reject) {
         var objXMLhttp = new XMLHttpRequest()
@@ -24,11 +19,13 @@ function AsyncTextReader(Place) {
 }
 
 var GeneArray = [];
+var AllCombinationsArray = [];
 
 async function DecodeGenes() {
   GeneArray = await AsyncTextReader('./SolarbotsList.txt');
+  AllCombinationsArray = await AsyncTextReader('./AllPossibleSolarbotsCombinations.txt');
   console.log(GeneArray);
-  console.log(AllBotsTemplate);
+  console.log(AllCombinationsArray);
 }
 
 function SelectAddress() {
@@ -138,10 +135,60 @@ async function FetchBots(id, bodydata, AmountOfBots) {
     console.log("before sleep");
     await sleep(2000);
     console.log(BotsInAccountArray);
+    InterpretID();
   }
 
 }
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+var OwnedBotsDetailArray = [];
+var SortedOwnedBots = [];
+
+function InterpretID() {
+  for(i=0; i<BotsInAccountArray.length; i++) {
+    OwnedBotsDetailArray.push({Id : BotsInAccountArray[i], Rarity : GeneArray[BotsInAccountArray[i]].Rarity, Faction : GeneArray[BotsInAccountArray[i]].Faction, Class : GeneArray[BotsInAccountArray[i]].Class, Type : GeneArray[BotsInAccountArray[i]].Type});
+  }
+  console.log(OwnedBotsDetailArray);
+
+  var ArrayOrderRarity = ["Void", "Epic", "Rare", "Common"];
+  var ArrayOrderFaction = ["Neutral", "Lacrean", "Illskagaard", "Arboria"];
+  var ArrayOrderClass = ["Tank", "Support", "Ranged DPS", "Melee DPS"];
+  var ArrayOrderType = ["Male Large", "Fem Large", "Neutral Baby"];
+
+  SortedOwnedBots = OwnedBotsDetailArray.sort(function(a, b) {
+    function getOrderIndexRarity(x) { 
+      return ArrayOrderRarity.indexOf(x.Rarity);
+    }
+    function getOrderIndexFaction(x) { 
+      return ArrayOrderFaction.indexOf(x.Faction);
+    }
+    function getOrderIndexClass(x) { 
+      return ArrayOrderClass.indexOf(x.Class);
+    }
+    function getOrderIndexType(x) { 
+      return ArrayOrderType.indexOf(x.Type);
+    }
+    
+    return (getOrderIndexRarity(a) - getOrderIndexRarity(b) || getOrderIndexFaction(a) - getOrderIndexFaction(b) || getOrderIndexClass(a) - getOrderIndexClass(b) || getOrderIndexType(a) - getOrderIndexType(b));
+  });
+  console.log(SortedOwnedBots);
+  ShowMissingBots();
+
+}
+
+function ShowMissingBots() {
+  var AmountOfBotsMissing = 0;
+  for(i=0; i<AllCombinationsArray.length; i++) {
+    for(j=0; j<SortedOwnedBots.length; j++) {
+      if(AllCombinationsArray[i].Rarity == SortedOwnedBots[j].Rarity && AllCombinationsArray[i].Faction == SortedOwnedBots[j].Faction && AllCombinationsArray[i].Class == SortedOwnedBots[j].Class && AllCombinationsArray[i].Type == SortedOwnedBots[j].Type) {
+        break;
+      } else if(j+1 == SortedOwnedBots.length) {
+        AmountOfBotsMissing++;
+      }
+    }
+  }
+  console.log(AmountOfBotsMissing);
 }
