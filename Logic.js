@@ -182,16 +182,20 @@ function InterpretID() {
   var L = document.getElementById("lds-hourglass");
   L.style.display = "none";
 
+  var D = document.getElementById("ButtonSwitchBox");
+  D.style.display = "grid";
+
   ShowMissingBots();
   AddAmounts();
   UIWriter();
 
 }
 
+var ArrayOfMissingBots = [];
+
 function ShowMissingBots() {
   var AmountOfBotsMissing = 0;
   var AmountOfBotsMissingAreVoids = 0;
-  var ArrayOfMissingBots = [];
   for(i=0; i<AllCombinationsArray.length; i++) {
     for(j=0; j<SortedOwnedBots.length; j++) {
       if(AllCombinationsArray[i].Rarity == SortedOwnedBots[j].Rarity && AllCombinationsArray[i].Faction == SortedOwnedBots[j].Faction && AllCombinationsArray[i].Class == SortedOwnedBots[j].Class && AllCombinationsArray[i].Type == SortedOwnedBots[j].Type) {
@@ -230,7 +234,6 @@ function UIWriter() {
   let IdName = "";
   for(i=0; i<SAmountArray.length; i++) {
     IdName = SAmountArray[i].Rarity.charAt(0) + SAmountArray[i].Faction.charAt(0) + SAmountArray[i].Class.charAt(0) + SAmountArray[i].Type.charAt(0);
-    console.log(IdName);
     document.getElementById("Field"+IdName).innerHTML = SAmountArray[i].Amount;
   }
 }
@@ -257,4 +260,21 @@ function ShowRarity(Rarity) {
   document.getElementById(Rarity+"ToggleHeader").innerHTML = "Hide "+Rarity;
 
   document.getElementById(Rarity+"Toggle").setAttribute( "onclick", "HideRarity('"+Rarity+"')" );
+}
+
+function DownloadYourBots() {
+  download(SAmountArray, "Owned_Bots_from_"+document.getElementById("ETHAddress").innerHTML);
+}
+
+function DownloadMissingBots() {
+  download(ArrayOfMissingBots, "Missing_Bots_from_"+document.getElementById("ETHAddress").innerHTML);
+}
+
+function download(Array, ETHAddressforDL) {
+  console.log("SaveAs Blob happening");
+    var save = JSON.stringify(Array);
+    var blob = new Blob([save], {
+      type: "text/plain;charset=utf-8"
+    });
+    saveAs(blob, ETHAddressforDL+".txt");
 }
