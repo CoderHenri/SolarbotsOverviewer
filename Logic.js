@@ -287,6 +287,50 @@ function ShowPictures() {
   for(i=0; i<AdaptRowsBigger.length; i++) {
     AdaptRowsBigger[i].style.gridTemplateRows = "110px 110px 110px 110px";
   }
+
+  /* working picture inputer
+  var el = document.getElementById("FieldVLTM");
+  el.innerHTML="<img src=\"./mk1_gifs/mk1_gifs/lacrean/tank/large/male_void.gif\" width=\"105px\" height=\"105px\">";
+  */
+
+  let UIIDField = "";
+  let Rarity = "";
+  let Faction = "";
+  let Class = "";
+  let Type = "";
+  let IMGLink = "";
+  let Gender = "";
+
+  for(j=0; j<160; j++) {
+    Rarity = AllCombinationsArray[j].Rarity.charAt(0);
+    Faction = AllCombinationsArray[j].Faction.charAt(0);
+    Class = AllCombinationsArray[j].Class.charAt(0);
+    Type = AllCombinationsArray[j].Type.charAt(0);
+
+    UIIDField = "Field"+ Rarity + Faction + Class + Type;
+
+    if(Class == "T" || Class == "S") {
+      Class = AllCombinationsArray[j].Class.toLowerCase();
+    } else if(Class == "R") {
+      Class = "ranged";
+    } else if(Class == "M") {
+      Class = "melee";
+    }
+
+    if(Type == "N") {
+      Type = "baby";
+      Gender = "neutral_";
+    } else if(Type == "F") {
+      Type = "large";
+      Gender = "fem_";
+    } else if(Type == "M") {
+      Type = "large";
+      Gender = "male_";
+    }
+
+    IMGLink = "<img src=\"./mk1_gifs/mk1_gifs/"+AllCombinationsArray[j].Faction.toLowerCase()+"/"+Class+"/"+Type+"/"+Gender+AllCombinationsArray[j].Rarity.toLowerCase()+".gif\" width=\"105px\" height=\"105px\">"
+    document.getElementById(UIIDField).innerHTML=IMGLink;
+  }
 }
 
 function ShowXXX() {
