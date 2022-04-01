@@ -178,6 +178,10 @@ function InterpretID() {
     return (getOrderIndexRarity(a) - getOrderIndexRarity(b) || getOrderIndexFaction(a) - getOrderIndexFaction(b) || getOrderIndexClass(a) - getOrderIndexClass(b) || getOrderIndexType(a) - getOrderIndexType(b));
   });
   console.log(SortedOwnedBots);
+
+  var L = document.getElementById("lds-hourglass");
+  L.style.display = "none";
+
   ShowMissingBots();
   AddAmounts();
   UIWriter();
@@ -229,4 +233,28 @@ function UIWriter() {
     console.log(IdName);
     document.getElementById("Field"+IdName).innerHTML = SAmountArray[i].Amount;
   }
+}
+
+function HideRarity(Rarity) {
+
+  document.getElementById(Rarity+"BoxLacrean").style.display = "none";
+  document.getElementById(Rarity+"BoxIllskagaard").style.display = "none";
+  document.getElementById(Rarity+"BoxArboria").style.display = "none";
+  document.getElementById(Rarity+"BoxNeutral").style.display = "none";
+
+  document.getElementById(Rarity+"ToggleHeader").innerHTML = "Show "+Rarity;
+
+  document.getElementById(Rarity+"Toggle").setAttribute( "onclick", "ShowRarity('"+Rarity+"')" );
+}
+
+function ShowRarity(Rarity) {
+
+  document.getElementById(Rarity+"BoxLacrean").style.display = "grid";
+  document.getElementById(Rarity+"BoxIllskagaard").style.display = "grid";
+  document.getElementById(Rarity+"BoxArboria").style.display = "grid";
+  document.getElementById(Rarity+"BoxNeutral").style.display = "grid";
+
+  document.getElementById(Rarity+"ToggleHeader").innerHTML = "Hide "+Rarity;
+
+  document.getElementById(Rarity+"Toggle").setAttribute( "onclick", "HideRarity('"+Rarity+"')" );
 }
