@@ -122,6 +122,13 @@
   }
 }
 
+.HideToggle {
+  margin-left: 60px;
+}
+
+.PicToggle {
+  margin-left: 88px;
+}
 
 .switch {
   position: relative;
@@ -129,7 +136,6 @@
   margin-top: 2px;
   width: 65px;
   height: 30px;
-  margin-left: 60px;
 }
 
 .switch input { 
@@ -204,7 +210,7 @@ input:checked + .slider:before {
   margin-right: auto;
   width: 740px;
   height: auto;
-  display: none;
+  display: grid;
   grid-template-rows: 30px 34px;
   grid-template-columns: 250px 240px 250px;
 }
@@ -293,6 +299,12 @@ input:checked + .slider:before {
 
 .Rarity{
   grid-area: Rarity;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SBClass{
   display: flex;
   align-items: center;
   justify-content: center;

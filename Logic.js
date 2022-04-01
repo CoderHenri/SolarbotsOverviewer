@@ -278,3 +278,23 @@ function download(Array, ETHAddressforDL) {
     });
     saveAs(blob, ETHAddressforDL+".txt");
 }
+
+function ShowPictures() {
+  document.getElementById("ShowPicHeader").innerHTML = "Show X X X";
+  document.getElementById("ShowPicToggle").setAttribute( "onclick", "ShowXXX()" );
+
+  var AdaptRowsBigger = document.getElementsByClassName("YourBotsBox");
+  for(i=0; i<AdaptRowsBigger.length; i++) {
+    AdaptRowsBigger[i].style.gridTemplateRows = "110px 110px 110px 110px";
+  }
+}
+
+function ShowXXX() {
+  document.getElementById("ShowPicHeader").innerHTML = "Show Pictures";
+  document.getElementById("ShowPicToggle").setAttribute( "onclick", "ShowPictures()" );
+
+  var AdaptRowsSmaller = document.getElementsByClassName("YourBotsBox");
+  for(i=0; i<AdaptRowsSmaller.length; i++) {
+    AdaptRowsSmaller[i].style.gridTemplateRows = "30px";
+  }
+}
