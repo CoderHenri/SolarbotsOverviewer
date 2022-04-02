@@ -288,6 +288,11 @@ function ShowPictures() {
     AdaptRowsBigger[i].style.gridTemplateRows = "110px 110px 110px 110px";
   }
 
+  var AdaptRowsBiggerNeutral = document.getElementsByClassName("YourBotsBoxNeutral");
+  for(i=0; i<AdaptRowsBiggerNeutral.length; i++) {
+    AdaptRowsBiggerNeutral[i].style.gridTemplateRows = "110px 110px 110px 110px";
+  }
+
   /* working picture inputer
   var el = document.getElementById("FieldVLTM");
   el.innerHTML="<img src=\"./mk1_gifs/mk1_gifs/lacrean/tank/large/male_void.gif\" width=\"105px\" height=\"105px\">";
@@ -300,6 +305,7 @@ function ShowPictures() {
   let Type = "";
   let IMGLink = "";
   let Gender = "";
+  let OBChecker = 0;
 
   for(j=0; j<160; j++) {
     Rarity = AllCombinationsArray[j].Rarity.charAt(0);
@@ -328,7 +334,19 @@ function ShowPictures() {
       Gender = "male_";
     }
 
-    IMGLink = "<img src=\"./mk1_gifs/mk1_gifs/"+AllCombinationsArray[j].Faction.toLowerCase()+"/"+Class+"/"+Type+"/"+Gender+AllCombinationsArray[j].Rarity.toLowerCase()+".gif\" width=\"105px\" height=\"105px\">"
+    IMGLink = "<img id='IDIMG' src=\"./mk1_gifs/mk1_gifs/"+AllCombinationsArray[j].Faction.toLowerCase()+"/"+Class+"/"+Type+"/"+Gender+AllCombinationsArray[j].Rarity.toLowerCase()+".gif\" width=\"105px\" height=\"105px\">";
+      
+  if(OBChecker<ArrayOfMissingBots.length) {
+    if(AllCombinationsArray[j].Rarity == ArrayOfMissingBots[OBChecker].Rarity && AllCombinationsArray[j].Faction == ArrayOfMissingBots[OBChecker].Faction && AllCombinationsArray[j].Class == ArrayOfMissingBots[OBChecker].Class && AllCombinationsArray[j].Type == ArrayOfMissingBots[OBChecker].Type) {
+        if(ArrayOfMissingBots[OBChecker].Type == "Neutral Baby") {
+          IMGLink = IMGLink + "<p id='PMissingNeutral'>" + "Missing" + "</p></div>";
+        } else {
+          IMGLink = IMGLink + "<p id='PMissing'>" + "Missing" + "</p></div>";
+        }
+        OBChecker++;
+      }
+    }
+
     document.getElementById(UIIDField).innerHTML=IMGLink;
   }
 }
@@ -341,6 +359,12 @@ function ShowXXX() {
   for(i=0; i<AdaptRowsSmaller.length; i++) {
     AdaptRowsSmaller[i].style.gridTemplateRows = "30px";
   }
+
+  var AdaptRowsSmallerNeutral = document.getElementsByClassName("YourBotsBoxNeutral");
+  for(i=0; i<AdaptRowsSmallerNeutral.length; i++) {
+    AdaptRowsSmallerNeutral[i].style.gridTemplateRows = "30px";
+  }
+
 
   let UIIDField = "";
   let Rarity = "";
@@ -357,5 +381,6 @@ function ShowXXX() {
     UIIDField = "Field"+ Rarity + Faction + Class + Type;
 
     document.getElementById(UIIDField).innerHTML="X";
+    UIWriter();
   }
 }

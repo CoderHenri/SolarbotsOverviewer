@@ -345,3 +345,25 @@ input:checked + .slider:before {
   border: 1px solid rgba(125, 125, 125, 0.8);
   text-align: center;
 }
+
+#PMissing {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 40px;
+  color: red;
+  transform: rotate(45deg);
+}
+
+#PMissingNeutral {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 40px;
+  margin-right: 0px;
+  color: red;
+  transform: rotate(45deg);
+}
+
+#IDIMG {
+  position: absolute;
+  margin-left: -55px;
+}
