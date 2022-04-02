@@ -341,4 +341,21 @@ function ShowXXX() {
   for(i=0; i<AdaptRowsSmaller.length; i++) {
     AdaptRowsSmaller[i].style.gridTemplateRows = "30px";
   }
+
+  let UIIDField = "";
+  let Rarity = "";
+  let Faction = "";
+  let Class = "";
+  let Type = "";
+
+  for(j=0; j<160; j++) {
+    Rarity = AllCombinationsArray[j].Rarity.charAt(0);
+    Faction = AllCombinationsArray[j].Faction.charAt(0);
+    Class = AllCombinationsArray[j].Class.charAt(0);
+    Type = AllCombinationsArray[j].Type.charAt(0);
+
+    UIIDField = "Field"+ Rarity + Faction + Class + Type;
+
+    document.getElementById(UIIDField).innerHTML="X";
+  }
 }
