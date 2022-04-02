@@ -210,7 +210,7 @@ input:checked + .slider:before {
   margin-right: auto;
   width: 740px;
   height: auto;
-  display: grid;
+  display: none;
   grid-template-rows: 30px 34px;
   grid-template-columns: 250px 240px 250px;
 }
