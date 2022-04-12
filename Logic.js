@@ -26,6 +26,8 @@ async function DecodeGenes() {
   AllCombinationsArray = await AsyncTextReader('./AllPossibleSolarbotsCombinations.txt');
   console.log(GeneArray);
   console.log(AllCombinationsArray);
+
+  AddLinksToFields();
 }
 
 function SelectAddress() {
@@ -386,4 +388,48 @@ function ShowXXX() {
     
   }
   UIWriter();
+}
+
+function AddLinksToFields() {
+  let UIIDField = "";
+  let Rarity = "";
+  let Faction = "";
+  let Class = "";
+  let Type = "";
+
+  for(j=0; j<160; j++) {
+    Rarity = AllCombinationsArray[j].Rarity.charAt(0);
+    Faction = AllCombinationsArray[j].Faction.charAt(0);
+    Class = AllCombinationsArray[j].Class.charAt(0);
+    Type = AllCombinationsArray[j].Type.charAt(0);
+
+    UIIDField = "Field"+ Rarity + Faction + Class + Type;
+
+    Rarity = AllCombinationsArray[j].Rarity
+
+    Faction = AllCombinationsArray[j].Faction
+    if(Faction == "Lacrean") {
+      Faction = "Lacrean%20Empire";
+    }
+
+    Class = AllCombinationsArray[j].Class
+    if(Class == "Melee DPS") {
+      Class = "Melee%20dps";
+    } else if(Class == "Ranged DPS") {
+      Class = "Ranged%20dps";
+    }
+
+    Type = AllCombinationsArray[j].Type
+    if(Type == "Neutral Baby") {
+      Type = "Neutral";
+    } else if(Type == "Male Large") {
+      Type = "Male";
+    } else if(Type == "Fem Large") {
+      Type = "Female";
+    }
+
+    document.getElementById(UIIDField).setAttribute( "onclick", "window.open('https://opensea.io/assets/solarbots-io?search[resultModel]=ASSETS&search[sortAscending]=true&search[sortBy]=PRICE&search[stringTraits][0][name]=Rarity&search[stringTraits][0][values][0]="+Rarity+"&search[stringTraits][1][name]=Type&search[stringTraits][1][values][0]="+Type+"&search[stringTraits][2][name]=Faction&search[stringTraits][2][values][0]="+Faction+"&search[stringTraits][3][name]=Class&search[stringTraits][3][values][0]="+Class+"','_blank')" );
+    
+  }
+  console.log("link ging");
 }
