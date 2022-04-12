@@ -429,7 +429,7 @@ function AddLinksToFields() {
     }
 
     document.getElementById(UIIDField).setAttribute( "onclick", "window.open('https://opensea.io/assets/solarbots-io?search[resultModel]=ASSETS&search[sortAscending]=true&search[sortBy]=PRICE&search[stringTraits][0][name]=Rarity&search[stringTraits][0][values][0]="+Rarity+"&search[stringTraits][1][name]=Type&search[stringTraits][1][values][0]="+Type+"&search[stringTraits][2][name]=Faction&search[stringTraits][2][values][0]="+Faction+"&search[stringTraits][3][name]=Class&search[stringTraits][3][values][0]="+Class+"','_blank')" );
-    
+    document.getElementById(UIIDField).style.cursor = "pointer";
   }
   console.log("link ging");
 }
