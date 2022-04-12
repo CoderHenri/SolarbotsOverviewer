@@ -212,6 +212,8 @@ function ShowMissingBots() {
   console.log(AmountOfBotsMissing);
   console.log(AmountOfBotsMissingAreVoids);
   console.log("You're missing "+AmountOfBotsMissing+" Solarbots, of which "+AmountOfBotsMissingAreVoids+" are Void Solarbots");
+  document.getElementById("MissingBotsMessage").innerHTML = "You're missing "+AmountOfBotsMissing+" Solarbots, of which "+AmountOfBotsMissingAreVoids+" are Void Solarbots";
+  document.getElementById("MissingBotsMessage").style.display = "block";
   console.log(ArrayOfMissingBots);
 }
 
@@ -381,6 +383,7 @@ function ShowXXX() {
     UIIDField = "Field"+ Rarity + Faction + Class + Type;
 
     document.getElementById(UIIDField).innerHTML="X";
-    UIWriter();
+    
   }
+  UIWriter();
 }
